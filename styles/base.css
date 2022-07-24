@@ -1,0 +1,20 @@
+
+/* custom variables */
+:root {
+  /* colors */
+  --primary-clr-1: hsl(171, 66%, 44%); /* strong cyan */
+  --primary-clr-2: hsl(233, 100%, 69%); /* light blue */
+  --neutral-clr-1: hsl(210, 10%, 33%); /* dark grayish blue */
+  --neutral-clr2: hsl(201, 11%, 66%); /* grayish blue */
+
+  /* font family */
+  --primary-ff: 'Bai Jamjuree', sans-serif;
+
+  /* font sizes */
+  
+  /* font weight */
+
+}
+
+/* Add utility classes below */
+
