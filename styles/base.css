@@ -2,19 +2,69 @@
 /* custom variables */
 :root {
   /* colors */
-  --primary-clr-1: hsl(171, 66%, 44%); /* strong cyan */
-  --primary-clr-2: hsl(233, 100%, 69%); /* light blue */
-  --neutral-clr-1: hsl(210, 10%, 33%); /* dark grayish blue */
-  --neutral-clr2: hsl(201, 11%, 66%); /* grayish blue */
+  --clr-primary-900: hsl(171, 66%, 44%); /* strong cyan */
+  --clr-primary-700: hsl(233, 100%, 69%); /* light blue */
+  --clr-neutral-500: hsl(210, 10%, 33%); /* dark grayish blue */
+  --clr-neutral-400: hsl(201, 11%, 66%); /* grayish blue */
 
   /* font family */
   --primary-ff: 'Bai Jamjuree', sans-serif;
 
   /* font sizes */
-  
-  /* font weight */
+  --fs-200: 0.9375; /* 15px */
+  --fs-300: 1rem; /* 16px */
+  --fs-400: 1.125rem; /* 18px */
+  --fs-500: 1.5rem; /* 24px */
+  --fs-600: 2rem /* 32px */
+  --fs-900: 3rem; /* 48px */
 
+  --fs-primary-heading: var(--fs-900);
+  --fs-secondady-heading: var(--fs-600);
+  --fs-tertiary-heading: var(--fs-500);
+  --fs-primary-subheading: var(--fs-400); 
+  --fs-secondary-subheading: var(--fs-300);
+  --fs-tertiary-subheading: var(--fs-200);
+
+  /* font weight */
+  --fw-regular: 400;
+  --fw-bold: 600;
 }
 
 /* Add utility classes below */
+.container {
+  max-width: 87.5rem;
+  min-width: 23.4375rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button {
+  color: #FFF;
+  font-size: var(--fs-400);
+  border-radius: 2rem; /* tentative */
+  padding: 1rem 2rem; /* tentative */
+  /* box shadow */
+  /* box shadow inset*/
+}
+
+.link {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-400);
+  text-decoration: none;
+  cursor: pointer;
+}
 
