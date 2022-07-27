@@ -1,0 +1,63 @@
+.heading-container {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background: url(../images/bg-header-desktop.png) top no-repeat;
+  font-family: var(--primary-ff);
+}
+
+header {
+  height: 100vh;
+}
+
+header #logo {
+  width: 7rem;
+}
+
+header .container.center {
+  height: 100%;
+}
+
+header .flex-row {
+  gap: 1rem;
+}
+
+#snippets .flex-column {
+  align-items: flex-start;
+}
+
+#workflow .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#workflow section.flex-column {
+  text-align: center;
+}
+
+#workflow #blacklist::before {
+  content: url(../images/icon-blacklist.svg);
+}
+
+#workflow #text::before {
+  content: url(../images/icon-text.svg);
+}
+
+#workflow #preview::before {
+  content: url(../images/icon-preview.svg);
+}
+
+#companies .container.flex-row{
+  justify-content: space-between;
+}
+
+/* to be applied on footer links */
+.footer-link {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-400);
+  text-decoration: none;
+  cursor: pointer;
+}
+

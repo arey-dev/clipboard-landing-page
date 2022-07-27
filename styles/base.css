@@ -6,20 +6,21 @@
   --clr-primary-700: hsl(233, 100%, 69%); /* light blue */
   --clr-neutral-500: hsl(210, 10%, 33%); /* dark grayish blue */
   --clr-neutral-400: hsl(201, 11%, 66%); /* grayish blue */
+  --clr-accent-400: hsla(201, 11%, 66%, 0.15); /* lighter grayish blue */
 
   /* font family */
   --primary-ff: 'Bai Jamjuree', sans-serif;
 
   /* font sizes */
-  --fs-200: 0.9375; /* 15px */
-  --fs-300: 1rem; /* 16px */
+  --fs-200: 0.875rem; /* 15px */
+  --fs-300: 1.063rem; /* 17px */
   --fs-400: 1.125rem; /* 18px */
   --fs-500: 1.5rem; /* 24px */
-  --fs-600: 2rem /* 32px */
-  --fs-900: 3rem; /* 48px */
+  --fs-600: 2rem; /* 32px */
+  --fs-900: 2.625rem; /* 48px */
 
   --fs-primary-heading: var(--fs-900);
-  --fs-secondady-heading: var(--fs-600);
+  --fs-secondary-heading: var(--fs-600);
   --fs-tertiary-heading: var(--fs-500);
   --fs-primary-subheading: var(--fs-400); 
   --fs-secondary-subheading: var(--fs-300);
@@ -32,39 +33,82 @@
 
 /* Add utility classes below */
 .container {
-  max-width: 87.5rem;
+  max-width: 75rem;
   min-width: 23.4375rem;
   width: 100%;
   margin: 0 auto;
   padding-inline: 2rem;
+  overflow: auto;
+}
+
+.center {
+  display: grid;
+  place-items: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  place-items: center;
   gap: 1.5rem;
 }
 
-.flex {
+.flex-row, .flex-column {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .button {
   color: #FFF;
   font-size: var(--fs-400);
-  border-radius: 2rem; /* tentative */
-  padding: 1rem 2rem; /* tentative */
+  border-radius: 2rem;
+  padding: 0.725rem 2rem;
+  border: 0;
   /* box shadow */
   /* box shadow inset*/
 }
 
-.link {
+.text-primary-heading {
+  font-size: var(--fs-primary-heading);
+}
+
+.text-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+}
+
+.text-tertiary-heading {
+  font-size: var(--fs-tertiary-heading);
+}
+
+.text-primary-subheading{
+  font-size: var(--fs-primary-subheading);
+}
+
+.text-secondary-subheading{
+  font-size: var(--fs-secondary-subheading);
+}
+
+.text-tertiary-subheading {
+  font-size: var(--fs-tertiary-subheading);
+}
+
+.text-dark {
+  font-weight: var(--fw-bold);
   color: var(--clr-neutral-500);
-  font-size: var(--fs-400);
-  text-decoration: none;
-  cursor: pointer;
+}
+
+.text-light {
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-400);
+}
+
+.bg-color {
+  background-color: var(--clr-accent-400);
 }
 
