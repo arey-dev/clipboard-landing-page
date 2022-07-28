@@ -17,7 +17,7 @@
   --fs-400: 1.125rem; /* 18px */
   --fs-500: 1.5rem; /* 24px */
   --fs-600: 2rem; /* 32px */
-  --fs-900: 2.625rem; /* 48px */
+  --fs-900: 2.45rem; /* 39.2px */
 
   --fs-primary-heading: var(--fs-900);
   --fs-secondary-heading: var(--fs-600);
@@ -27,8 +27,8 @@
   --fs-tertiary-subheading: var(--fs-200);
 
   /* font weight */
+    --fw-bold: 600;
   --fw-regular: 400;
-  --fw-bold: 600;
 }
 
 /* Add utility classes below */
@@ -74,6 +74,10 @@
   /* box shadow inset*/
 }
 
+.bg-color {
+  background-color: var(--clr-accent-400);
+}
+
 .text-primary-heading {
   font-size: var(--fs-primary-heading);
 }
@@ -107,8 +111,3 @@
   font-weight: var(--fw-regular);
   color: var(--clr-neutral-400);
 }
-
-.bg-color {
-  background-color: var(--clr-accent-400);
-}
-
