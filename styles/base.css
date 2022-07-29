@@ -4,12 +4,16 @@
   /* colors */
   --clr-primary-900: hsl(171, 66%, 44%); /* strong cyan */
   --clr-primary-700: hsl(233, 100%, 69%); /* light blue */
+
   --clr-neutral-500: hsl(210, 10%, 33%); /* dark grayish blue */
   --clr-neutral-400: hsl(201, 11%, 66%); /* grayish blue */
-  --clr-accent-400: hsla(201, 11%, 66%, 0.15); /* lighter grayish blue */
+  
+  --clr-accent-300: hsl(171, 66%, 33%); /* dark cyan */
+  --clr-accent-200: hsl(233, 100%, 58%); /* dark blue */
+  --clr-accent-100: hsla(201, 11%, 66%, 0.15); /* lighter grayish blue */
 
   /* font family */
-  --primary-ff: 'Bai Jamjuree', sans-serif;
+  --ff-primary: 'Bai Jamjuree', sans-serif;
 
   /* font sizes */
   --fs-200: 0.875rem; /* 15px */
@@ -22,12 +26,13 @@
   --fs-primary-heading: var(--fs-900);
   --fs-secondary-heading: var(--fs-600);
   --fs-tertiary-heading: var(--fs-500);
+
   --fs-primary-subheading: var(--fs-400); 
   --fs-secondary-subheading: var(--fs-300);
   --fs-tertiary-subheading: var(--fs-200);
 
   /* font weight */
-    --fw-bold: 600;
+  --fw-bold: 600;
   --fw-regular: 400;
 }
 
@@ -64,18 +69,20 @@
   flex-direction: column;
 }
 
-.button {
-  color: #FFF;
-  font-size: var(--fs-400);
-  border-radius: 2rem;
-  padding: 0.725rem 2rem;
-  border: 0;
-  /* box shadow */
-  /* box shadow inset*/
+.bg-clr-900 {
+  background-color: var(--clr-primary-900);
 }
 
-.bg-color {
-  background-color: var(--clr-accent-400);
+.bg-clr-700 {
+  background-color: var(--clr-primary-700);
+}
+
+.bg-clr-500 {
+  background-color: var(--clr-neutral-500);
+}
+
+.bg-clr-100 {
+  background-color: var(--clr-accent-100);
 }
 
 .text-primary-heading {
