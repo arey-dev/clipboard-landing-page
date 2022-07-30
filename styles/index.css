@@ -65,13 +65,18 @@ header h1 {
   margin-bottom: 8rem;
 }
 
+#snippets .container {
+  max-width: 87.5rem;
+  overflow: hidden;
+  padding-inline: 2rem 4rem;
+}
+
 #snippets .heading-container {
   margin-bottom: 4.75rem;
 }
 
 #snippets .grid {
-  grid-template-columns: minmax(max-content, 1fr) 1fr;
-  gap: 3rem;
+  grid-template-columns: max-content minmax(13rem, 1fr);
 }
 
 #snippets img {
@@ -81,8 +86,8 @@ header h1 {
 
 #snippets .flex-column {
   place-self: end start;
-  max-width: 19rem;
-  margin-bottom: 6rem;
+  max-width: 18.75rem;
+  margin-bottom: 6.25rem;
   align-items: flex-start;
   gap: 3rem;
 }
@@ -159,25 +164,35 @@ header h1 {
 /* FOOTER */
 
 footer {
+  /* max-width: 87.5rem;
+  width: 100%;
+  margin: 0 auto; */
   padding-block: 2.5rem;
 }
 
-footer .container.flex-row {
+/* footer .container.flex-row {
   justify-content: space-between;
+} */
+
+
+
+footer .container.grid {
+  grid-template-columns: minmax(max-content, 13rem) repeat(2, minmax(max-content, 1fr));
 }
 
 #footer-logo {
   width: 4rem;
+  place-self: center start;
 }
 
 #footer-nav .grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   place-items: center start;
   gap: 1rem 4rem;
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 }
 
 footer .nav-link {
@@ -189,6 +204,11 @@ footer .nav-link {
 
 footer .nav-link:hover {
   color: var(--clr-primary-900);
+}
+
+[aria-label="Social media links"].flex-row {
+  place-self: center end;
+  flex-shrink: 0;
 }
 
 footer .social-link:hover svg path {
@@ -233,4 +253,47 @@ footer .social-link:hover svg path {
 
 .button:hover {
   opacity: 0.8;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 67.5em) {
+  /* [snippets] section */
+  #snippets .container {
+    max-width: 75rem;
+    padding-inline: 2rem;
+  }
+
+  #snippets .grid {
+    grid-template-columns: 1fr;
+  }
+
+  #snippets img {
+    position: unset;
+    width: 42rem;
+    margin-bottom: 4rem;
+  }
+
+  #snippets .flex-column {
+    place-self: unset;
+    flex-direction: row;
+    max-width: 50rem;
+    margin-bottom: unset;
+  }
+
+  /* [access] section */
+  #access img {
+    width: 50rem;
+  }
+
+  /* [companies] section */
+
+  #companies .flex-row {
+    justify-content: space-around;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  /* insert here */
 }
