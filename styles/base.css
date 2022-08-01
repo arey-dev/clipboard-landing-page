@@ -16,7 +16,7 @@
   --ff-primary: 'Bai Jamjuree', sans-serif;
 
   /* font sizes */
-  --fs-200: 0.875rem; /* 15px */
+  --fs-200: 0.875rem; /* 14px */
   --fs-300: 1.063rem; /* 17px */
   --fs-400: 1.125rem; /* 18px */
   --fs-500: 1.5rem; /* 24px */
@@ -34,6 +34,20 @@
   /* font weight */
   --fw-bold: 600;
   --fw-regular: 400;
+}
+
+@media only screen and (max-width: 50em) {
+  :root {
+    --fs-200: 0.9375rem; /* 15px */
+
+    --fs-primary-heading: var(--fs-600);
+    --fs-secondary-heading: calc(var(--fs-500) + 0.25rem);
+    --fs-tertiary-heading: var(--fs-500);
+
+    --fs-primary-subheading: var(--fs-200);
+    --fs-secondary-subheading: var(--fs-200);
+    --fs-tertiary-subheading: var(--fs-200);
+  }
 }
 
 /* Add utility classes below */

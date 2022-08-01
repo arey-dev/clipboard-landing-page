@@ -206,7 +206,7 @@ footer .nav-link:hover {
   color: var(--clr-primary-900);
 }
 
-[aria-label="Social media links"].flex-row {
+footer [aria-label="Social media links"].flex-row {
   place-self: center end;
   flex-shrink: 0;
 }
@@ -215,7 +215,7 @@ footer .social-link:hover svg path {
   fill: var(--clr-primary-900);
 }
 
-/* button styles */
+/* BUTTON */
 
 .button {
   color: #FFF;
@@ -295,5 +295,51 @@ footer .social-link:hover svg path {
 }
 
 @media only screen and (max-width: 50em) {
-  /* insert here */
+
+  /* [snippets] section */
+  #snippets img {
+    width: 35rem;
+    margin-bottom: 2rem;
+  }
+
+  #snippets .flex-column {
+    flex-direction: column;
+    max-width: 32rem;
+    margin-bottom: unset;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* [workflow] section */
+  #workflow .grid {
+    grid-template-columns: 1fr;
+    max-width: 32rem;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  /* FOOTER */  
+  footer .container.grid {
+    grid-template-columns: 1fr;
+  }
+
+  #footer-logo {
+    width: 3.25rem;
+    place-self: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #footer-nav .grid {
+    gap: 1rem 4rem;
+    margin-bottom: 1rem;
+  }
+
+  footer [aria-label="Social media links"].flex-row {
+    place-self: center;
+  }
+
+  .button, footer .nav-link {
+    font-size: var(--fs-300);
+  }
+
 }
