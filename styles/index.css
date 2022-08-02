@@ -35,7 +35,7 @@ header .heading-container,
   line-height: 2;
 }
 
-[aria-label="Download buttons"] {
+.button-container {
   gap: 1rem;
   /** alternate solution for box-shadow not to be affected by overflow-auto:
   * margin-bottom: 1rem;
@@ -308,7 +308,7 @@ footer .social-link:hover svg path {
     margin-bottom: 1.25rem;
   }
 
-  footer [aria-label="Social media links"].flex-row {
+  footer .flex-row {
     place-self: center;
   }
 
@@ -320,7 +320,7 @@ footer .social-link:hover svg path {
 @media only screen and (max-width: 30em) {
   /* BUTTONS */
 
-  [aria-label="Download buttons"] {
+  .button-container {
     flex-direction: column;
     width: 100%;
   }
