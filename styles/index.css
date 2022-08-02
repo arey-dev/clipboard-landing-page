@@ -370,3 +370,9 @@ footer .social-link:hover svg path {
     transform: scale(0.9);
   }
 }
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(../images/bg-header-mobile.png) top no-repeat;
+  }
+}
