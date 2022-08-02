@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/clipboard-screenshot.png)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Clipboard Landing Page](https://arey-dev.github.io/clipboard-landing-page/)
 
 ## My process
 
@@ -42,20 +42,18 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
+  In this project, I learned how to oganize my HTML and CSS code much better. My judgment and assessment of the design before coding was put to a test, and it was fun! The core knowledge or skills that I acquired in this challenge are the use of utility classes and maximizing the use of CSS custom variables.
 
+### Continued development
+
+  Planning and organizing my code were a challenge for me in this challenge, so I plan to focus on improving on this aspect of coding. 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Keving Powell](https://www.youtube.com/kepowob) - How I did this project was inprired by his work from a frontend mentor challenge.
 
 ## Author
 
 - Frontend Mentor - [@arey-dev](https://www.frontendmentor.io/profile/arey-dev)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
