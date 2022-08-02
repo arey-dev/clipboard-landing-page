@@ -3,15 +3,19 @@ body {
   font-family: var(--ff-primary);
 }
 
-header .heading-container,
-#last-section .heading-container {
-  margin-bottom: 1.5rem;
+#snippets, #workflow, #companies, #last-section {
+  margin-bottom: 8rem;
 }
 
 .heading-container {
   max-width: 41rem;
-  margin: 0 auto;
+  margin: 0 auto 4.75rem auto;
   text-align: center;
+}
+
+header .heading-container,
+#last-section .heading-container {
+  margin-bottom: 1.5rem;
 }
 
 .text-primary-heading,
@@ -39,7 +43,6 @@ header .heading-container,
 }
 
 /* HEADER */
-
 header {
   height: 100vh;
 }
@@ -61,18 +64,10 @@ header h1 {
 
 /* [snippets] section */
 
-#snippets {
-  margin-bottom: 8rem;
-}
-
 #snippets .container {
   max-width: 87.5rem;
   overflow: hidden;
   padding-inline: 2rem 4rem;
-}
-
-#snippets .heading-container {
-  margin-bottom: 4.75rem;
 }
 
 #snippets .grid {
@@ -98,20 +93,7 @@ header h1 {
   margin-bottom: 4rem;
 }
 
-#access .heading-container {
-  /* margin-bottom: 5rem; */
-  margin-bottom: 4.75rem;
-}
-
 /* [workflow] section */
-
-#workflow {
-  margin-bottom: 8rem;
-}
-
-#workflow .heading-container {
-  margin-bottom: 4.75rem;
-}
 
 #workflow .grid {
   grid-template-columns: repeat(3, 1fr);
@@ -142,10 +124,6 @@ header h1 {
 
 /* [companies] section */
 
-#companies {
-  margin-bottom: 8rem;
-}
-
 #companies .flex-row {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -153,28 +131,17 @@ header h1 {
 
 /* [last-section] section */
 
-#last-section {
-  margin-bottom: 8rem;
-}
-
 #last-section .container {
   overflow: unset; /* for box shadows to be seen */
 }
 
 /* FOOTER */
-
 footer {
-  /* max-width: 87.5rem;
+  max-width: 87.5rem;
   width: 100%;
-  margin: 0 auto; */
+  margin: 0 auto;
   padding-block: 2.5rem;
 }
-
-/* footer .container.flex-row {
-  justify-content: space-between;
-} */
-
-
 
 footer .container.grid {
   grid-template-columns: minmax(max-content, 13rem) repeat(2, minmax(max-content, 1fr));
@@ -185,6 +152,10 @@ footer .container.grid {
   place-self: center start;
 }
 
+#footer-nav {
+  width: 100%;
+}
+
 #footer-nav .grid {
   grid-template-columns: repeat(3, minmax(max-content, 1fr));
   grid-template-rows: repeat(2, 1fr);
@@ -192,7 +163,6 @@ footer .container.grid {
   grid-auto-columns: 1fr;
   place-items: center start;
   gap: 1rem 4rem;
-  /* margin-right: 10rem; */
 }
 
 footer .nav-link {
@@ -206,7 +176,7 @@ footer .nav-link:hover {
   color: var(--clr-primary-900);
 }
 
-footer [aria-label="Social media links"].flex-row {
+footer .flex-row {
   place-self: center end;
   flex-shrink: 0;
 }
@@ -216,7 +186,6 @@ footer .social-link:hover svg path {
 }
 
 /* BUTTON */
-
 .button {
   color: #FFF;
   font-size: var(--fs-400);
@@ -256,7 +225,6 @@ footer .social-link:hover svg path {
 }
 
 /* MEDIA */
-
 @media only screen and (max-width: 67.5em) {
   /* [snippets] section */
   #snippets .container {
@@ -310,6 +278,11 @@ footer .social-link:hover svg path {
     text-align: center;
   }
 
+  /* [access] section */
+  #access .heading-container {
+    margin-bottom: 2rem;
+  }
+
   /* [workflow] section */
   #workflow .grid {
     grid-template-columns: 1fr;
@@ -326,12 +299,13 @@ footer .social-link:hover svg path {
   #footer-logo {
     width: 3.25rem;
     place-self: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   #footer-nav .grid {
-    gap: 1rem 4rem;
-    margin-bottom: 1rem;
+    place-items: center;
+    gap: 1rem 3rem;
+    margin-bottom: 1.25rem;
   }
 
   footer [aria-label="Social media links"].flex-row {
@@ -341,5 +315,58 @@ footer .social-link:hover svg path {
   .button, footer .nav-link {
     font-size: var(--fs-300);
   }
+}
 
+@media only screen and (max-width: 30em) {
+  /* BUTTONS */
+
+  [aria-label="Download buttons"] {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 19.5rem;
+  }
+}
+
+@media only screen and (max-width: 28.75rem) {
+  /* [companies] section */
+  #companies .flex-row {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  #companies .flex-row img {
+    width: 8.5rem;
+  }
+
+  #companies img[alt="IBM"] {
+    width: 7rem;
+  }
+
+  /* [last-section] section */
+  #last-section {
+    margin-bottom: 10rem;
+  }
+
+  /* FOOTER */
+
+  #footer-nav .grid {
+    grid-template-rows: unset;
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 1.5rem;
+  }
+
+  footer .flex-row {
+    gap: 2.5rem;
+  }
+
+  footer .social-link svg {
+    transform: scale(0.9);
+  }
 }
